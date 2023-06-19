@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>survey from</title>
+        <meta name="viewport" content="width=device-width, initial-scaled=1 ,user-scalable=no"/>
+        <style>
+            *{
+                margin : 0;
+                padding : 0;
+            }
+            body {
+                background-image: url(bg.jpg) ;
+                background-size: cover;
+                background-attachment: fixed;
+                color: #fff;
+                background-color: rgba(57,179,250,0.7);
+                background-blend-mode: multiply;
+                font-size: 1.1em;
+                font-family: 'poppins' , sans-serif;
+                
+
+            }
+            .heading {
+                text-align: center;
+                width:100%;
+                margin:auto;
+                margin-top: 100px;
+                
+            }
+            #head{
+                color: white;
+                font-size: 1.7em;
+            }
+            #subhead{
+               font-size: 18px; 
+               color: white;
+               margin-top: 10px;
+            }   
+            #content1{
+                width : 90;
+                margin:auto;
+                color: white;
+               
+            }
+            form {
+                background-color: rgba(0,0,0,0.7);
+                padding-top: 34px;
+                display: flex;
+                align-items : center;
+                justify-content: center;
+                width: 54%;
+                border-radius: 5px;
+                margin: auto;
+                margin-top: 10px;
+              
+                padding-bottom: 60px;
+            }
+            form .box{
+                width: 98.5%;
+                height: 2.8em;
+                
+            }
+            textarea::placeholder{
+                font-size: 1.4em;
+                position: relative;
+                top: 8px;
+                left: 5px;
+                width : 70%;
+
+            }
+            button{
+                width: 90%;
+                height: 3em;
+                position: relative;
+                top: 11px;
+                background-color: rgb(18,219,78);
+                border: none;
+                color: rgb(225,255,2555);
+                margin: 10px;
+                cursor: pointer;
+
+
+            }
+            input.larger{
+                width: 20px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <div class ="heading">
+        <h1 id="head">Sample Survey Form</h1>
+        <h2 id="subhead"> <i>Thank you for taking time to fill the survey</i></h2>
+
+    </div>
+    <form>
+        <div id ="content1">
+            <label>Name</label> </br>
+            <input type="name" name="name" placeholder="Enter Your Name" class="box" > <br><br>
+            <label>Email(optional)</label> </br>
+            <input type="email" name ="email" placeholder="Enter Your Email" class="box" > <br><br>
+            <label>Age</label> </br>
+            <input type="Age" name="name" placeholder="Enter Your Age" class="box" > <br><br>
+            <label>Which options describes your current role? </label> </br>
+            
+            <div id ="optional">
+                <select>
+                    <option name="Select Your Role">Select Your Role</option>
+                    <option value="Fresher">Fresher</option>
+                    <option value="two years exp">Experience</option>
+                    <option value="three year exp">Other</option>
+                </select>
+            </div>
+
+        
+        <br>
+        <div>
+            <label id ="head1"> How would rate yourself your coding skills?</label> <br><br>
+            <input type="radio" name="radio" class="larger">Good<br><br>
+            <input type="radio" name="radio" class="larger">Average<br><br>
+            <input type="radio" name="radio" class="larger">Poor<br><br>
+            <label id ="head1"> What would you like to learn?(check all that apply)</label> <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Frontend Development </label><br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Back-end Development <br><br>
+            <input type="checkbox" name="checkbox" class="larger"><label>Fullstack Development <br><br>
+        </div>
+        <label id ="head2"> Any Comments or Suggestion?</label> <br><br>
+        <textarea placeholder= "Enter Your Suggestion here.."></textarea></br>
+        <button><h2>Submit</h2></button>
+    </form>
+</html>
